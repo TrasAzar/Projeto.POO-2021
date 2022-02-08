@@ -9,6 +9,8 @@ class Usuario {
         this.username = username;
     }
 
+
+
 }
 
 class Controle{
@@ -17,11 +19,19 @@ class Controle{
     constructor(){
         this.users = new Map()
     }
+}
 
-    addUser(username:string, IdUser): void{
-        if(!this.users.has(IdUser)
-    }
+class Tweet{
+    private id: number;
+    private username: string;
+    private msg: string;
+    
+    constructor(){
 
     }
 }
 
+class Inbox{
+    private timeline: Map<number, Tweet>
+    private myTweets: Map<number, Tweet>
+}
