@@ -153,16 +153,5 @@ class Hospital{
         }
     }
 
-    toString() {
-        let saida = ""
-        saida += `Pac: ${this.id}:${this.diagnostico} `;
-        saida += "Meds: ["
-        for (let medico in this.medicos.keys) {
-            saida += `${medico}. `
-        }
-        saida += "]";
-        return saida;
-    }
-
 }
 
